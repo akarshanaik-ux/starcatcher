@@ -160,6 +160,7 @@
     text-transform: uppercase;
     color: rgba(249, 231, 168, 0.75);
     font-weight: 400;
+    white-space: nowrap;
   }
   .prompt .sub::before,
   .prompt .sub::after {
@@ -167,6 +168,17 @@
     color: rgba(249, 231, 168, 0.5);
     margin: 0 8px;
     font-weight: 400;
+  }
+
+  @media (max-width: 600px) {
+    .prompt .sub {
+      font-size: 10px;
+      letter-spacing: 0.22em;
+    }
+    .prompt .sub::before,
+    .prompt .sub::after {
+      margin: 0 6px;
+    }
   }
 
   /* Message modal */
